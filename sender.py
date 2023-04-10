@@ -32,6 +32,7 @@ print('connected')
 def test_camera():
     dm = DeviceManager()
     dm.root.rescan()
+
     devices = dm.all_devices
     for device in devices:
         if 'Camera' in str(device):
